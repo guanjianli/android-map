@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+    <Button
+        android:id="@+id/marker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取marker"
+        android:onClick="tsss"
+        />
+
+    <TextView
+        android:id="@+id/mark_listenter_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="拖动marker1" />
+</LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        >
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fire"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
